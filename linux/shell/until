@@ -1,0 +1,7 @@
+#!/bin/sh
+until who | grep "$1" > /dev/null
+do
+	sleep 60
+done
+echo -e \\a
+exit 0
