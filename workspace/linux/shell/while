@@ -1,0 +1,12 @@
+#!/bin/sh
+foo=1
+bar=$foo+1
+echo "bar is $bar"
+while [ "$foo" -le 20 ]
+do
+echo "here we go again"
+foo=$(($foo+1))
+done
+
+exit 0
+

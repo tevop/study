@@ -1,0 +1,10 @@
+#!/bin/sh
+unset foo
+echo ${foo:-bar}
+
+foo=fud
+echo ${foo:-bar}
+
+foo=/usr/bin/x11/startx
+echo ${foo#*/}
+echo ${foo##*/}

@@ -1,0 +1,16 @@
+#!/bin/sh
+for foo in bar fud 43
+do
+echo $foo
+done
+for file in $(ls f*.sh); do
+lpr $file
+done
+
+echo "Enter password"
+read trythis
+while [ "$trythis" != "secret" ]; do
+echo "Sorry, try again"
+read trythis
+done
+exit 0

@@ -1,0 +1,221 @@
+15:22:15 **** Build of configuration Debug for project linux ****
+make all 
+Building file: ../file/copy_block.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"file/copy_block.d" -MT"file/copy_block.d" -o "file/copy_block.o" "../file/copy_block.c"
+Finished building: ../file/copy_block.c
+ 
+Building file: ../file/copy_system.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"file/copy_system.d" -MT"file/copy_system.d" -o "file/copy_system.o" "../file/copy_system.c"
+Finished building: ../file/copy_system.c
+ 
+Building file: ../file/newcopy.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"file/newcopy.d" -MT"file/newcopy.d" -o "file/newcopy.o" "../file/newcopy.c"
+Finished building: ../file/newcopy.c
+ 
+Building file: ../file/pdex.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"file/pdex.d" -MT"file/pdex.d" -o "file/pdex.o" "../file/pdex.c"
+Finished building: ../file/pdex.c
+ 
+Building file: ../file/printDirSelf.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"file/printDirSelf.d" -MT"file/printDirSelf.d" -o "file/printDirSelf.o" "../file/printDirSelf.c"
+../file/printDirSelf.c: In function ‘printDir’:
+../file/printDirSelf.c:31:8: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+    if (strcmp(".", dirDes->d_name) == 0 ||
+        ^
+Finished building: ../file/printDirSelf.c
+ 
+Building file: ../file/printdir.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"file/printdir.d" -MT"file/printdir.d" -o "file/printdir.o" "../file/printdir.c"
+../file/printdir.c: In function ‘printdir’:
+../file/printdir.c:20:56: warning: passing argument 2 of ‘getcwd’ makes integer from pointer without a cast [-Wint-conversion]
+  printf("current working directory:%s\n", getcwd(NULL, NULL));
+                                                        ^
+In file included from ../file/printdir.c:1:0:
+/usr/include/unistd.h:514:14: note: expected ‘size_t {aka unsigned int}’ but argument is of type ‘void *’
+ extern char *getcwd (char *__buf, size_t __size) __THROW __wur;
+Finished building: ../file/printdir.c
+ 
+              ^
+../file/printdir.c:34:56: warning: passing argument 2 of ‘getcwd’ makes integer from pointer without a cast [-Wint-conversion]
+Building file: ../file/read.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"file/read.d" -MT"file/read.d" -o "file/read.o" "../file/read.c"
+  printf("current working directory:%s\n", getcwd(NULL, NULL));
+                                                        ^
+In file included from ../file/printdir.c:1:0:
+/usr/include/unistd.h:514:14: note: expected ‘size_t {aka unsigned int}’ but argument is of type ‘void *’
+ extern char *getcwd (char *__buf, size_t __size) __THROW __wur;
+              ^
+Finished building: ../file/read.c
+ 
+Building file: ../file/simple_write.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"file/simple_write.d" -MT"file/simple_write.d" -o "file/simple_write.o" "../file/simple_write.c"
+Finished building: ../file/simple_write.c
+ 
+Building file: ../env/args.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"env/args.d" -MT"env/args.d" -o "env/args.o" "../env/args.c"
+Finished building: ../env/args.c
+ 
+Building file: ../env/environ.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"env/environ.d" -MT"env/environ.d" -o "env/environ.o" "../env/environ.c"
+Finished building: ../env/environ.c
+ 
+Building file: ../env/envtime.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"env/envtime.d" -MT"env/envtime.d" -o "env/envtime.o" "../env/envtime.c"
+Finished building: ../env/envtime.c
+ 
+Building file: ../env/getopt.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"env/getopt.d" -MT"env/getopt.d" -o "env/getopt.o" "../env/getopt.c"
+Finished building: ../env/getopt.c
+ 
+Building file: ../env/hostget.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"env/hostget.d" -MT"env/hostget.d" -o "env/hostget.o" "../env/hostget.c"
+../env/hostget.c: In function ‘main’:
+../env/hostget.c:12:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(1);
+   ^
+../env/hostget.c:12:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../env/hostget.c:12:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../env/hostget.c:18:2: warning: incompatible implicit declaration of built-in function ‘exit’
+Finished building: ../env/hostget.c
+ 
+Building file: ../env/showenv.c
+  exit(0);
+  ^
+../env/hostget.c:18:2: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"env/showenv.d" -MT"env/showenv.d" -o "env/showenv.o" "../env/showenv.c"
+Finished building: ../env/showenv.c
+ 
+Building file: ../env/sort.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"env/sort.d" -MT"env/sort.d" -o "env/sort.o" "../env/sort.c"
+../env/sort.c:51:6: warning: return type of ‘main’ is not ‘int’ [-Wmain]
+ void main() {
+      ^
+Finished building: ../env/sort.c
+ 
+Building file: ../env/tempfille.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"env/tempfille.d" -MT"env/tempfille.d" -o "env/tempfille.o" "../env/tempfille.c"
+../env/tempfille.c: In function ‘main’:
+../env/tempfille.c:13:2: warning: ‘filename’ is used uninitialized in this function [-Wuninitialized]
+  printf("Temporary file name is: %s\n", filename);
+  ^
+Finished building: ../env/tempfille.c
+ 
+Building file: ../env/user.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"env/user.d" -MT"env/user.d" -o "env/user.o" "../env/user.c"
+Finished building: ../env/user.c
+ 
+Building file: ../base/bill.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"base/bill.d" -MT"base/bill.d" -o "base/bill.o" "../base/bill.c"
+Finished building: ../base/bill.c
+ 
+Building file: ../base/fred.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"base/fred.d" -MT"base/fred.d" -o "base/fred.o" "../base/fred.c"
+Finished building: ../base/fred.c
+ 
+Building file: ../base/hello.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"base/hello.d" -MT"base/hello.d" -o "base/hello.o" "../base/hello.c"
+../base/hello.c: In function ‘main’:
+../base/hello.c:5:2: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+  exit(0);
+  ^
+../base/hello.c:5:2: warning: incompatible implicit declaration of built-in function ‘exit’
+../base/hello.c:5:2: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+Finished building: ../base/hello.c
+ 
+Building file: ../base/program.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"base/program.d" -MT"base/program.d" -o "base/program.o" "../base/program.c"
+../base/program.c: In function ‘main’:
+../base/program.c:6:2: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+  exit(0);
+  ^
+../base/program.c:6:2: warning: incompatible implicit declaration of built-in function ‘exit’
+Finished building: ../base/program.c
+../base/program.c:6:2: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+ 
+Building target: linux
+Invoking: GCC C Linker
+gcc  -o "linux"  ./file/copy_block.o ./file/copy_system.o ./file/newcopy.o ./file/pdex.o ./file/printDirSelf.o ./file/printdir.o ./file/read.o ./file/simple_write.o  ./env/args.o ./env/environ.o ./env/envtime.o ./env/getopt.o ./env/hostget.o ./env/showenv.o ./env/sort.o ./env/tempfille.o ./env/user.o  ./base/bill.o ./base/fred.o ./base/hello.o ./base/program.o   
+./file/copy_system.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_system.c:6: multiple definition of `main'
+makefile:32: recipe for target 'linux' failed
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./file/newcopy.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../file/newcopy.c:4: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./file/pdex.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../file/pdex.c:32: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./file/printDirSelf.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../file/printDirSelf.c:46: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./file/printdir.o: In function `printdir':
+/home/tevop/mygit/study/workspace/linux/Debug/../file/printdir.c:8: multiple definition of `printdir'
+./file/pdex.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/pdex.c:8: first defined here
+./file/printdir.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../file/printdir.c:38: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./file/read.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../file/read.c:4: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./file/simple_write.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../file/simple_write.c:4: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./env/args.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../env/args.c:4: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./env/environ.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../env/environ.c:5: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./env/envtime.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../env/envtime.c:6: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./env/getopt.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../env/getopt.c:5: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./env/hostget.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../env/hostget.c:5: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./env/showenv.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../env/showenv.c:6: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./env/sort.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../env/sort.c:51: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./env/tempfille.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../env/tempfille.c:4: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./env/user.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../env/user.c:7: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./base/hello.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../base/hello.c:3: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+./base/program.o: In function `main':
+/home/tevop/mygit/study/workspace/linux/Debug/../base/program.c:4: multiple definition of `main'
+./file/copy_block.o:/home/tevop/mygit/study/workspace/linux/Debug/../file/copy_block.c:6: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [linux] Error 1
+
+15:22:23 Build Finished (took 8s.319ms)
+

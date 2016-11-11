@@ -1,0 +1,30 @@
+#!/bin/sh
+
+myvar="Hi there"
+
+echo $myvar
+echo "$myvar"
+echo '$myvar'
+echo \$myvar
+
+echo Enter some text
+read myvar
+
+echo '$myvar' now equals $myvar
+
+#####################################
+echo "try var"
+salutation="Hello"
+echo $salutation
+echo "The progrram $0 is now running"
+echo "The second parameter was $2"
+echo "The first parameter was $1"
+echo "The parameter list was $*"
+echo "The user's home directory is $HOME"
+
+echo "Please enter a new greeting"
+read salutation
+
+echo $salutation
+echo "The script is now complete"
+exit 0

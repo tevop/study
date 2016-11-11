@@ -1,14 +1,18 @@
-00:59:08 **** Build of configuration Debug for project test ****
+18:21:30 **** Build of configuration Debug for project test ****
 make all 
 Building file: ../test.c
 Invoking: GCC C Compiler
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"test.d" -MT"test.d" -o "test.o" "../test.c"
 ../test.c: In function ‘main’:
-../test.c:2:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
-  printf("hello,c");
+../test.c:12:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(1);
+   ^
+../test.c:12:3: warning: incompatible implicit declaration of built-in function ‘exit’
+../test.c:12:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+../test.c:18:2: warning: incompatible implicit declaration of built-in function ‘exit’
+  exit(0);
   ^
-../test.c:2:2: warning: incompatible implicit declaration of built-in function ‘printf’
-../test.c:2:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+../test.c:18:2: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
 Finished building: ../test.c
  
 Building target: test
@@ -16,6 +20,6 @@ Invoking: GCC C Linker
 gcc  -o "test"  ./test.o   
 Finished building target: test
  
-00:59:24 **** Incremental Build of configuration Debug for project test ****
+18:21:53 **** Incremental Build of configuration Debug for project test ****
 make all 
 make: Nothing to be done for 'all'.
